@@ -52,6 +52,9 @@
 		}
 	},
 	"workspaceFolder": "/workspaces/vscode-remote-try-node",
+	"mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+	],
 	"portsAttributes": {
 		"3000": {
 			"label": "Hello Remote World",
