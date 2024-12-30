@@ -47,13 +47,14 @@
 				"github.copilot-workspace",
 				"eamodio.gitlens",
 				"ms-python.black-formatter",
-				"ms-python.isort"
+				"ms-python.isort",
+				"CircleCI.circleci"
 			]
 		}
 	},
 	"workspaceFolder": "/workspaces/vscode-remote-try-node",
 	"mounts": [
-		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+		"source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached,readonly"
 	],
 	"portsAttributes": {
 		"3000": {
