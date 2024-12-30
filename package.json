@@ -1,21 +1,30 @@
 {
-  "name": "docker_web_app",
+  "name": "fire-project",
   "version": "1.0.0",
-  "description": "Node.js and Python integration project",
+  "description": "Full-stack Node.js and Python integration project",
   "author": "Oleg Kizyma <oleg1203@gmail.com>",
-  "main": "server.js",
+  "main": "src/node/app.js",
   "private": true,
   "scripts": {
     "start": "node src/node/app.js",
     "dev": "nodemon src/node/app.js",
     "watch": "nodemon --watch src/node --watch src/python src/node/app.js",
-    "test": "mocha"
+    "test": "mocha tests/**/*.js",
+    "python-tests": "python -m pytest tests/python"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "mocha": "^10.2.0",
-    "nodemon": "^3.0.2"
-  }
+    "nodemon": "^3.0.2",
+    "chai": "^4.3.7",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "ISC"
 }
