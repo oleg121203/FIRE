@@ -51,6 +51,7 @@
 			]
 		}
 	},
+	"workspaceFolder": "/workspaces/vscode-remote-try-node",
 	"portsAttributes": {
 		"3000": {
 			"label": "Hello Remote World",
